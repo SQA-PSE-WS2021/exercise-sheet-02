@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>de.unistuttgart.iste.sqa.pse</groupId>
+	<artifactId>sheet02</artifactId>
+	<version>1.0.0</version>
+	<name>Sheet 02</name>
+
+
+	<properties>
+		<hamster.version>4.1.1</hamster.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>de.hamstersimulator.objectsfirst</groupId>
+			<artifactId>inspector</artifactId>
+			<version>${hamster.version}</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<release>16</release>
+					<source>16</source>
+					<target>16</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>3.0.0</version>
+				<executions>
+					<execution>
+						<id>presence-execution</id>
+						<goals>
+							<goal>java</goal>
+						</goals>
+						<configuration>
+							<mainClass>de.unistuttgart.iste.sqa.pse.sheet02.presence.ExerciseHamsterGameApp</mainClass>
+						</configuration>
+					</execution>
+					<execution>
+						<id>homework-execution</id>
+						<goals>
+							<goal>java</goal>
+						</goals>
+						<configuration>
+							<mainClass>de.unistuttgart.iste.sqa.pse.sheet02.homework.HomeworkHamsterApp</mainClass>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>
