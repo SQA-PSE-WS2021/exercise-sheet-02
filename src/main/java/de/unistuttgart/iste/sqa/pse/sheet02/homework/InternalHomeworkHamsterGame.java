@@ -15,7 +15,7 @@ public abstract class InternalHomeworkHamsterGame extends InspectableSimpleHamst
 		testAllGrainsInCave();
 	}
 
-	private final void testAllGrainsInCave() {
+	private void testAllGrainsInCave() {
 		paule.write("Test:");
 		Territory territory = game.getTerritory();
 		if (territory.getNumberOfGrainsAt(new Location(6, 1)) == territory.getTotalGrainCount() && paule.mouthEmpty()) {
