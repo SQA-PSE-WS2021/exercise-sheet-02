@@ -29,6 +29,7 @@
 					<release>16</release>
 					<source>16</source>
 					<target>16</target>
+					<parameters>true</parameters>
 				</configuration>
 			</plugin>
 			<plugin>
