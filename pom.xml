@@ -38,7 +38,7 @@
 				<version>3.0.0</version>
 				<executions>
 					<execution>
-						<id>presence-execution</id>
+						<id>ExerciseHamsterGameApp</id>
 						<goals>
 							<goal>java</goal>
 						</goals>
@@ -47,12 +47,12 @@
 						</configuration>
 					</execution>
 					<execution>
-						<id>homework-execution</id>
+						<id>HomeworkHamsterGameApp</id>
 						<goals>
 							<goal>java</goal>
 						</goals>
 						<configuration>
-							<mainClass>de.unistuttgart.iste.sqa.pse.sheet02.homework.HomeworkHamsterApp</mainClass>
+							<mainClass>de.unistuttgart.iste.sqa.pse.sheet02.homework.HomeworkHamsterGameApp</mainClass>
 						</configuration>
 					</execution>
 				</executions>

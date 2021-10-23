@@ -1,8 +1,8 @@
 package de.unistuttgart.iste.sqa.pse.sheet02.homework;
 
-public class HomeworkHamsterApp {
+public class HomeworkHamsterGameApp {
 	public static void main(String[] args) {
-		final HomeworkHamster game = new HomeworkHamster();
+		final HomeworkHamsterGame game = new HomeworkHamsterGame();
 		game.doRun();
 	}
 }

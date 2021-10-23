@@ -1,36 +1,23 @@
 package de.unistuttgart.iste.sqa.pse.sheet02.homework;
 
-import de.hamstersimulator.objectsfirst.datatypes.Location;
-import de.hamstersimulator.objectsfirst.external.model.Territory;
-import de.hamstersimulator.objectsfirst.inspector.InspectableSimpleHamsterGame;
+/**
+ * Beschreiben Sie hier die Klasse HomeworkHamsterGame.
+ * 
+ * @author (Ihr Name)
+ * @version (eine Versionsnummer oder ein Datum)
+ */
+public class HomeworkHamsterGame extends InternalHomeworkHamsterGame {
 
-public abstract class HomeworkHamsterGame extends InspectableSimpleHamsterGame {
-	public HomeworkHamsterGame() {
-		this.loadTerritoryFromResourceFile("/territories/territory.ter");
-		this.displayInNewGameWindow();
-	}
-
-	protected final void testPaulesSkills() {
-		hamsterRun();
-		testAllGrainsInCave();
-	}
-
-	private final void testAllGrainsInCave() {
-		paule.write("Test:");
-		Territory territory = game.getTerritory();
-		if (territory.getNumberOfGrainsAt(new Location(6, 1)) == territory.getTotalGrainCount() && paule.mouthEmpty()) {
-			paule.write("Wuhu geschafft!");
-		} else {
-			paule.write("Oh nein! Das hat wohl nicht geklappt");
-		}
-	}
-
+	/*
+	 * Verwirrter Paule! Helfe Paule um durch das Territorium zu laufen und alle
+	 * Körner in seine Höhle zu bringen. Dabei soll Paule alle Körner auf dem Feld
+	 * aufsammeln und sie in seiner Höhle (rechts unten - Spalte 6 * Zeile 4 bei 0
+	 * beginnend) wieder ablegen.
+	 */
 	@Override
-	protected void run() {
-		game.startGame();
-		testPaulesSkills();
-		game.stopGame();
+	protected void hamsterRun() {
+		paule.write("Ich weiß nicht wie :'(");
+		// Helfe Paule dabei durch das Territorium zu laufen
+		// und alle Körner nachhause zu bringen
 	}
-
-	abstract void hamsterRun();
 }
