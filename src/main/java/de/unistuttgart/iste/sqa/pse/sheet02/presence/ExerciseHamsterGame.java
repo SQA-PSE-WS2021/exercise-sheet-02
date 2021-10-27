@@ -20,20 +20,20 @@ public class ExerciseHamsterGame extends InspectableSimpleHamsterGame {
 		this.displayInNewGameWindow();
 		game.startGame();
 	}
-	
+
 	/**
 	 * Override to remove have paule not right from the start.
 	 */
 	@Override
-    protected void initializeInspection(final InspectionViewModel inspect) {
-        final ClassInstanceManager manager = inspect.getClassInstanceManager();
-        manager.addInstance(this, "simpleHamsterGame", true);
-        manager.addInstance(this.game, "game", false);
-        manager.addInstance(this.game.getTerritory(), "territory", false);
-        manager.addClass(Hamster.class, false);
-        manager.addClass(Location.class, false);
-        manager.addClassesFromCurrentPackage();
-    }
+	protected void initializeInspection(final InspectionViewModel inspect) {
+		final ClassInstanceManager manager = inspect.getClassInstanceManager();
+		manager.addInstance(this, "simpleHamsterGame", true);
+		manager.addInstance(this.game, "game", false);
+		manager.addInstance(this.game.getTerritory(), "territory", false);
+		manager.addClass(Hamster.class, false);
+		manager.addClass(Location.class, false);
+		manager.addClassesFromCurrentPackage();
+	}
 
 	public Hamster getHamster() {
 		return paule;
