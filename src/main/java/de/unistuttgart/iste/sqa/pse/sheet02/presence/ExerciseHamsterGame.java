@@ -22,6 +22,15 @@ public class ExerciseHamsterGame extends InspectableSimpleHamsterGame {
 	}
 
 	/**
+	 * Make Paule turn right, e.g., if Paule looks to the north, he should look to
+	 * the east east after this operation got executed.
+	 */
+	public void turnRight() {
+		// your code goes here. Do not change other parts of this class!
+
+	}
+
+	/**
 	 * Override to remove have paule not right from the start.
 	 */
 	@Override
@@ -46,4 +55,5 @@ public class ExerciseHamsterGame extends InspectableSimpleHamsterGame {
 	protected void run() {
 		// do nothing
 	}
+
 }
