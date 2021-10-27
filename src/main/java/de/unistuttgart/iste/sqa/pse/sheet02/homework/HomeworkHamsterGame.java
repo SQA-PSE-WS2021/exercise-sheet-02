@@ -16,8 +16,42 @@ public class HomeworkHamsterGame extends InternalHomeworkHamsterGame {
 	 */
 	@Override
 	protected void hamsterRun() {
-		paule.write("Ich weiß nicht wie :'(");
+		// EXERCISE 2:
 		// Help Paule to walk through the territory and to bring all the grains
 		// into his cave.
+
+		// Walk to the first grain
+		paule.move();
+		paule.move();
+		paule.move();
+		paule.move();
+		paule.move();
+
+		// Pick up the first grain
+		paule.pickGrain();
+
+		// Turn in the direction of the second grain
+		paule.turnLeft();
+		paule.turnLeft();
+		paule.turnLeft();
+
+		// You can remove this line
+		paule.write("Ich weiß nicht wie es weitergeht :'(");
+
+		// Move to the second grain
+		// TODO:implement
+
+		// Pick up the second grain
+		// TODO:implement
+
+		// Add further steps (comment + code) to collect all grains!
+		// TODO:implement
+
+		// Pick up grains in the cave
+		// TODO:implement
+
+		// Put down all grains in the cave
+		// TODO:implement
+
 	}
 }
