@@ -1,23 +1,22 @@
 package de.unistuttgart.iste.sqa.pse.sheet02.homework;
 
 /**
- * Beschreiben Sie hier die Klasse HomeworkHamsterGame.
+ * Describe the class HomeworkHamsterGame here.
  * 
- * @author (Ihr Name)
- * @version (eine Versionsnummer oder ein Datum)
+ * @author (Your name)
+ * @version (a version number or a date)
  */
 public class HomeworkHamsterGame extends InternalHomeworkHamsterGame {
 
 	/*
-	 * Verwirrter Paule! Helfe Paule um durch das Territorium zu laufen und alle
-	 * Körner in seine Höhle zu bringen. Dabei soll Paule alle Körner auf dem Feld
-	 * aufsammeln und sie in seiner Höhle (rechts unten - Spalte 6 * Zeile 4 bei 0
-	 * beginnend) wieder ablegen.
+	 * Confused Paule! Help Paule to walk through the territory and to bring all the grains
+	 * into his cave. In the process Paule should collect all grains on the field and deposit them 
+	 * in his cave (lower left corner - row 6 * column 2 and indexing starts with 0).
 	 */
 	@Override
 	protected void hamsterRun() {
 		paule.write("Ich weiß nicht wie :'(");
-		// Helfe Paule dabei durch das Territorium zu laufen
-		// und alle Körner nachhause zu bringen
+		// Help Paule to walk through the territory and to bring all the grains
+		// into his cave.
 	}
 }
