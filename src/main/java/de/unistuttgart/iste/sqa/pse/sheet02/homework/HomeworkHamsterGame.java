@@ -36,7 +36,7 @@ public class HomeworkHamsterGame extends InternalHomeworkHamsterGame {
 		paule.turnLeft();
 
 		// You can remove this line
-		paule.write("Ich weiß nicht wie es weitergeht :'(");
+		paule.write("I do not know how to continue:'(");
 
 		// Move to the second grain
 		// TODO:implement
