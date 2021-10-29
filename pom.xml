@@ -9,7 +9,7 @@
 
 
 	<properties>
-		<hamster.version>4.1.1</hamster.version>
+		<hamster.version>4.2.0</hamster.version>
 	</properties>
 
 	<dependencies>
